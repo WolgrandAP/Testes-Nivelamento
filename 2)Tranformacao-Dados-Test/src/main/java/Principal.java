@@ -21,6 +21,8 @@ public class Principal {
             String text = pdfStripper.getText(document);
             document.close();
 
+            System.out.println(text);
+
 
             // Processa os dados extraídos e salva em CSV
             FileWriter fileWriter = new FileWriter(csvFile);
